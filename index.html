@@ -4,14 +4,16 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>✦ Donde Siempre Vuelve Mi Corazón ✦</title>
+<title>MIÉRCOLES 15 DE JULIO DEL 2026 - CARTA (CAP XI)</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
 <style>
 
@@ -22,136 +24,228 @@ box-sizing:border-box;
 }
 
 body{
-background:radial-gradient(circle at top,#39291c 0%,#221912 45%,#15100c 100%);
-font-family:'Cormorant Garamond',serif;
-display:flex;
-justify-content:center;
-align-items:center;
+
+background:
+radial-gradient(circle at center,#5c4327 0%,#352112 45%,#170d08 100%);
+
 min-height:100vh;
-padding:45px;
+
+font-family:'Cormorant Garamond',serif;
+
+padding:60px 20px;
+
+overflow-x:hidden;
+
 }
 
-.book-page{
-position:relative;
-width:min(900px,100%);
-padding:70px 70px 130px;
-background:linear-gradient(180deg,#f8f1e2,#f0e5cc,#ebdcc0);
-border:2px solid #c8ae79;
-box-shadow:0 0 60px rgba(0,0,0,.55), inset 0 0 90px rgba(124,95,56,.12);
-overflow:hidden;
-}
+body::before{
 
-.book-page::before{
 content:"";
-position:absolute;
-top:18px;
-left:18px;
-right:18px;
-bottom:18px;
-border:1px solid rgba(149,112,62,.35);
+
+position:fixed;
+
+inset:0;
+
+background:
+repeating-linear-gradient(
+90deg,
+rgba(255,255,255,.015),
+rgba(255,255,255,.015) 3px,
+transparent 3px,
+transparent 80px
+);
+
+opacity:.35;
+
+pointer-events:none;
+
 }
 
-.book-page::after{
-content:"❦";
-position:absolute;
-top:26px;
-right:28px;
-font-size:30px;
-color:#b89d68;
-opacity:.45;
+.book{
+
+max-width:950px;
+
+margin:auto;
+
+background:#4b2816;
+
+border-radius:18px;
+
+padding:28px;
+
+box-shadow:
+0 25px 60px rgba(0,0,0,.65);
+
+border:6px solid #8f693d;
+
+position:relative;
+
 }
 
-.ornament{
+.cover-title{
+
 text-align:center;
-font-size:24px;
-letter-spacing:8px;
-color:#8d6842;
-margin-bottom:25px;
-}
 
-.book-title{
-text-align:center;
-font-size:18px;
+font-family:'Cinzel',serif;
+
+font-size:2rem;
+
+color:#f7d98d;
+
 letter-spacing:3px;
-text-transform:uppercase;
-color:#6a4b2b;
-margin-bottom:18px;
+
+text-shadow:
+0 2px 0 #7b582c,
+0 0 12px rgba(255,217,141,.35);
+
+margin-bottom:22px;
+
 }
 
-.chapter{
+.page{
+
+background:
+linear-gradient(#f9f0d9,#efe1bf);
+
+border-radius:10px;
+
+padding:65px;
+
+position:relative;
+
+box-shadow:
+inset 0 0 30px rgba(0,0,0,.12);
+
+}
+
+.page::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background-image:
+radial-gradient(rgba(90,70,40,.05) 1px,transparent 1px);
+
+background-size:18px 18px;
+
+opacity:.55;
+
+pointer-events:none;
+
+}
+
+.corner{
+
+position:absolute;
+
+font-size:44px;
+
+color:#b08a45;
+
+opacity:.7;
+
+}
+
+.c1{top:15px;left:22px;}
+.c2{top:15px;right:22px;transform:rotate(90deg);}
+.c3{bottom:15px;left:22px;transform:rotate(-90deg);}
+.c4{bottom:15px;right:22px;transform:rotate(180deg);}
+
+.header{
+
 text-align:center;
-font-size:34px;
-font-weight:600;
-letter-spacing:3px;
-color:#4d3520;
-margin-bottom:12px;
+
+margin-bottom:55px;
+
+}
+
+.header h1{
+
+font-family:'Cinzel',serif;
+
+font-size:2rem;
+
+line-height:1.5;
+
+color:#5b3213;
+
+margin-bottom:22px;
+
 }
 
 .date{
-text-align:center;
-font-size:17px;
+
+font-size:1rem;
+
+color:#7b5c2e;
+
 letter-spacing:1px;
-color:#7c5c37;
-margin-bottom:50px;
+
 }
 
-.content{
-border:1px dashed rgba(150,113,63,.45);
-background:rgba(255,255,255,.12);
-padding:45px 35px;
-text-align:center;
-line-height:2;
-font-size:22px;
-font-style:italic;
-color:#5a4127;
-}
+.greeting{
 
-.content strong{
-font-size:24px;
-font-style:normal;
-}
-
-#countdown{
 margin-top:35px;
-font-size:42px;
-font-weight:bold;
-letter-spacing:4px;
-color:#7a2d2d;
+
+font-family:'Cormorant SC',serif;
+
+font-size:3rem;
+
+color:#7b4323;
+
+margin-bottom:28px;
+
 }
 
-.count-text{
-margin-top:18px;
-font-size:18px;
-font-style:normal;
-color:#6d5130;
+p{
+
+font-size:1.35rem;
+
+line-height:2.05;
+
+text-align:justify;
+
+color:#4d3520;
+
+margin-bottom:22px;
+
 }
 
-.status{
-margin-top:45px;
+.first::first-letter{
+
+font-size:5rem;
+
+float:left;
+
+line-height:.9;
+
+padding-right:10px;
+
+font-family:'Cinzel',serif;
+
+color:#8d5a2d;
+
+}
+
+strong{
+
+font-weight:700;
+
+}
+
+.divider{
+
 text-align:center;
-font-size:18px;
-line-height:1.9;
-font-style:italic;
-color:#6b4d2d;
-}
 
-.seal{
-margin:55px auto 0;
-width:78px;
-height:78px;
-border-radius:50%;
-background:radial-gradient(circle at 30% 30%,#a43d3d,#6d1919 70%);
-border:4px solid #d5b37a;
-box-shadow:0 8px 15px rgba(0,0,0,.25), inset 0 0 12px rgba(255,255,255,.15);
-}
+font-size:26px;
 
-.page-number{
-position:absolute;
-bottom:28px;
-right:42px;
-font-size:17px;
-letter-spacing:2px;
-color:#765737;
+margin:35px 0;
+
+color:#9b7643;
+
 }
 
 </style>
@@ -160,51 +254,437 @@ color:#765737;
 
 <body>
 
-<div class="book-page">
+<div class="book">
 
-<div class="ornament">
-✦ ❦ ✦ ❦ ✦ ❦ ✦
-</div>
+<div class="cover-title">
 
-<div class="book-title">
 ✦ Donde Siempre Vuelve Mi Corazón ✦
+
 </div>
 
-<div class="chapter">
-Capítulo XI
-</div>
+<div class="page">
 
-<div class="date">
-Miércoles 15 de julio de 2026 • Noche
-</div>
+<div class="corner c1">❦</div>
+<div class="corner c2">❦</div>
+<div class="corner c3">❦</div>
+<div class="corner c4">❦</div>
 
-<div class="content">
+<div class="header">
 
-<strong>
-La próxima página ya escucha el eco de los segundos que faltan para despertar...
-</strong>
+<h1>
+
+<strong>CAPÍTULO XI</strong>
 
 <br><br>
 
-El tiempo continúa escribiendo en silencio hasta que llegue el instante en que este antiguo libro vuelva a confiarle una nueva historia al corazón.
+<strong>DONDE EL AMOR APRENDE QUE HAY BATALLAS QUE SOLO SE GANAN TOMÁNDOSE DE LA MANO</strong>
 
-<div id="countdown">
-00:00:00
-</div>
+</h1>
 
-<div class="count-text">
-Solo un poco más... y una nueva página será revelada.
-</div>
+<div class="date">
+
+<strong>Miércoles, 15 de julio del 2026 – Noche</strong>
 
 </div>
 
-<div class="status">
-✦ Ningún capítulo nace antes de tiempo; incluso el amor más grande sabe esperar el momento perfecto. ✦
 </div>
 
-<div class="seal"></div>
+<div class="greeting">
 
-  
+Mi niña hermosa:
+
+</div>
+
+<p class="first">
+
+Existen noches en las que el destino parece escribir sus páginas con una tinta más pesada de lo normal. No porque el amor se haga pequeño, sino porque la vida, de vez en cuando, decide poner a prueba la fuerza con la que dos corazones son capaces de sostenerse cuando todo alrededor parece desordenarse. Esta noche, mientras las estrellas guardan silencio sobre nosotros, siento que este viejo libro merece conservar uno de los capítulos más sinceros que mi alma ha escrito.
+
+</p>
+
+<p>
+
+Hoy fue uno de esos días que jamás imaginé vivir contigo. Confieso que hubo un instante en el que mi corazón sintió un dolor difícil de explicar. Escuchar ciertas cosas, recordar algunos momentos y ver con mis propios ojos situaciones que despertaron inseguridades hizo que apareciera ese miedo tan humano de sentir que la persona que más amas pueda lastimarte sin siquiera proponérselo. Por eso te escribí lo que sentía. No nació del enojo, ni del orgullo, ni del deseo de hacerte daño. Nació únicamente del inmenso amor que te tengo y del temor de perder aquello que más cuido desde que llegaste a mi vida: nuestro amor.
+
+</p>
+
+<div class="divider">
+
+❦
+
+</div>
+
+<p>
+
+Pero mientras el día seguía avanzando, comprendí una verdad mucho más grande que cualquier duda. La herida más profunda de hoy no fue nuestra conversación. La herida más grande fue descubrir que alguien en quien depositaste tantos años de confianza jamás estaba cuidando tu corazón como una verdadera amiga debía hacerlo. Desde hace meses había sentido que algo no estaba bien. Algunas palabras que llegaron a mis oídos me hicieron pensar que aquella amistad no era tan limpia como aparentaba. Aun así, jamás deseé tener razón, porque sabía que descubrir una traición así solo podía romper una parte de tu alma.
+
+</p>
+
+<p>
+
+Y cuando todo terminó, comprendí que ninguna discusión entre nosotros dolía tanto como imaginarte sintiendo que una persona importante para ti nunca fue realmente quien decía ser. Me dolió porque conozco el cariño que le tenías. Me dolió porque sé que jamás esperabas terminar este día perdiendo una amistad que alguna vez creíste verdadera.
+
+</p>
+
+<p>
+
+Cuando te pregunté si estabas bien y me respondiste que estabas mal, lo único que quería era aparecer frente a ti para abrazarte tan fuerte que por un instante olvidaras todo lo que había ocurrido. Quise quedarme contigo porque mi corazón simplemente no sabe alejarse cuando la mujer que ama está sufriendo. Tal vez fui demasiado insistente. Tal vez no entendí que necesitabas un poco de silencio para acomodar todo lo que sentías. Perdóname por eso. Nunca fue porque quisiera ignorar lo que necesitabas; fue porque imaginarte llorando mientras yo me alejaba era algo que mi alma simplemente no podía soportar.
+
+</p>
+
+<div class="divider">
+
+❦
+
+</div>
+
+<p>
+
+Gracias por pedirme perdón, mi amor. Quiero que sepas que yo también te pido perdón por todo lo que ocurrió hoy. Si alguna de mis palabras aumentó el peso que ya llevaba tu corazón, créeme que jamás fue mi intención. Lo único que deseaba era cuidar lo nuestro, porque cuando se ama de verdad, cualquier cosa que parezca amenazar ese amor duele más de lo que las palabras alcanzan a explicar.
+
+</p>
+
+<p>
+
+Hoy entendí que el amor también necesita paciencia. Necesita aprender a escuchar antes de juzgar, a abrazar antes de reclamar y a permanecer incluso cuando el mundo parece desmoronarse. Nosotros también estamos aprendiendo, y aunque este capítulo haya comenzado con lágrimas, quiero creer que terminará fortaleciéndonos, porque ninguna historia digna de convertirse en leyenda fue escrita únicamente con días felices.
+
+</p>
+
+<p>
+
+Mi amor, quiero que recuerdes algo que jamás cambiará.
+
+</p>
+
+<p>
+
+Las personas pueden marcharse. Las amistades pueden romperse. Las máscaras tarde o temprano terminan cayendo. Pero yo quiero seguir siendo ese lugar al que puedas regresar cuando el mundo te decepcione. Quiero ser la calma que abrace tus tormentas, la mano que nunca se suelte cuando todos los demás decidan hacerlo y el refugio donde jamás tengas miedo de mostrar tus lágrimas, tus dudas o tus silencios.
+
+</p>
+
+<div class="divider">
+
+❦
+
+</div>
+
+<p>
+
+No permitiré que un día difícil escriba el final de nuestra historia. Al contrario... quiero que este capítulo sea la prueba de que nuestro amor también sabe sobrevivir a los días grises. Porque amar no consiste únicamente en compartir las sonrisas; amar también significa quedarse cuando el otro siente que todo se está derrumbando, permanecer cuando las fuerzas parecen agotarse y recordar, incluso en medio del dolor, por qué un día decidimos elegirnos.
+
+</p>
+
+<p>
+
+Esta noche no quiero que cierres los ojos pensando en quienes te fallaron. Quiero que los cierres recordando que existe un hombre que sigue eligiéndote incluso en los días complicados, que sigue enamorándose de tu corazón aun cuando está cansado, que continúa soñando con el futuro que construiremos juntos y que jamás dejará de luchar por la paz de tu alma.
+
+</p>
+
+<p>
+
+Te amo con la calma de quien decidió quedarse para siempre y con la intensidad de quien cada noche vuelve a elegir el mismo corazón. Si algún día vuelves a sentir que el mundo pesa demasiado sobre tus hombros, recuerda que los míos siempre estarán aquí para ayudarte a cargarlo. Porque eso hace el amor verdadero: no elimina las tormentas, pero jamás permite que la persona que ama las enfrente sola.
+
+</p>
+
+<p>
+
+Al final de este capítulo comprendí una verdad que guardaré para siempre entre las páginas de este viejo libro: ninguna mentira, ninguna decepción y ninguna falsa amistad tendrán jamás más fuerza que el amor sincero que cada día seguimos escribiendo tú y yo. Mientras nuestras manos sigan encontrándose y nuestros corazones continúen pronunciando el nombre del otro, siempre existirá un nuevo amanecer dispuesto a regalarnos otra oportunidad para ser felices.
+
+</p>
+
+<p style="text-align:center;">
+
+<strong>
+
+Con todo mi amor, hoy, mañana y en todas las páginas que el destino aún escribirá para nosotros.
+
+<br><br>
+
+El hombre que siempre encontrará su hogar en tu corazón.
+
+</strong>
+
+</p>
+
+<hr style="
+margin:55px auto;
+width:82%;
+border:none;
+border-top:1px solid rgba(120,85,40,.35);
+">
+
+<style>
+
+/*==========================
+GRABADO FINAL
+==========================*/
+
+.book-quote{
+
+margin:0 auto 55px;
+max-width:760px;
+padding:28px 36px;
+
+border:2px solid rgba(176,138,69,.45);
+border-radius:10px;
+
+background:rgba(255,248,228,.45);
+
+position:relative;
+
+}
+
+.book-quote::before{
+
+content:"❦";
+
+position:absolute;
+
+top:-18px;
+left:50%;
+
+transform:translateX(-50%);
+
+background:#efe1bf;
+
+padding:0 14px;
+
+font-size:26px;
+
+color:#9b7643;
+
+}
+
+.book-quote p{
+
+margin:0;
+
+text-align:center;
+
+font-size:1.45rem;
+
+line-height:2;
+
+color:#8b3dff;
+
+font-family:'Cormorant Garamond',serif;
+
+text-shadow:
+0 0 5px rgba(171,92,255,.45),
+0 0 10px rgba(171,92,255,.35),
+0 0 18px rgba(171,92,255,.28);
+
+}
+
+</style>
+
+<div class="book-quote">
+
+<p>
+
+<strong>
+
+Los antiguos escritores afirmaban que el amor verdadero no se reconoce cuando todo es perfecto, sino cuando dos corazones deciden permanecer juntos aun después de haber conocido el dolor, las dudas y las decepciones. Quizá por eso esta noche merece quedar escrita para siempre entre estas páginas. Porque, aunque el día intentó llenarnos de tristeza, terminó recordándome que el lugar donde realmente quiero estar sigue siendo a tu lado. No importa cuántas personas entren o salgan de nuestras vidas, cuántas máscaras caigan o cuántas tormentas intenten apagar nuestra luz; mientras exista un "nosotros", siempre habrá una esperanza más fuerte que cualquier herida. Y si algún día vuelves a sentir que el mundo deja de creer en ti, prométeme que abrirás este capítulo y recordarás que hubo un hombre que eligió quedarse incluso cuando era más fácil marcharse, que decidió abrazarte cuando otros te soltaron y que convirtió cada latido de su corazón en una promesa silenciosa de proteger el tuyo. Porque, después de todo lo vivido, sigo teniendo la misma certeza del primer día: mi lugar favorito en el universo siempre será donde estén tus manos, tu sonrisa y tu corazón.
+
+<br><br>
+
+✨ <span style="font-size:1.65rem;">Y mientras este viejo libro conserve una sola página en blanco, seguiré escribiendo sobre ella el mismo nombre, la misma historia y el mismo destino que elegí para toda mi vida: <strong>Valeria Petro Villazón.</strong> ❤️</span>
+
+</strong>
+
+</p>
+
+</div>
+
+
+<style>
+
+/*=========================================
+SELLO DE CERA
+=========================================*/
+
+.seal-container{
+
+display:flex;
+
+justify-content:center;
+
+margin:45px 0 15px;
+
+}
+
+.wax-seal{
+
+width:165px;
+height:165px;
+
+border-radius:50%;
+
+text-decoration:none;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+padding:18px;
+
+font-family:'Cinzel',serif;
+
+font-size:.82rem;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+color:#fff7ff;
+
+background:
+radial-gradient(circle at 35% 30%,
+#d88cff 0%,
+#a93fff 45%,
+#6d179f 75%,
+#4c0c74 100%);
+
+border:5px solid #f2d89d;
+
+box-shadow:
+0 12px 25px rgba(0,0,0,.35),
+inset 0 3px 10px rgba(255,255,255,.25),
+inset 0 -8px 15px rgba(0,0,0,.25);
+
+transition:.35s ease;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.wax-seal::before{
+
+content:"";
+
+position:absolute;
+
+width:210px;
+height:40px;
+
+background:rgba(255,255,255,.22);
+
+transform:rotate(-35deg);
+
+top:18px;
+left:-60px;
+
+}
+
+.wax-seal:hover{
+
+transform:scale(1.08) rotate(-2deg);
+
+box-shadow:
+0 20px 35px rgba(0,0,0,.45);
+
+}
+
+.ribbon{
+
+width:6px;
+
+height:95px;
+
+background:linear-gradient(#b3884d,#f4dca6,#b3884d);
+
+margin:0 auto;
+
+border-radius:5px;
+
+}
+
+.end-message{
+
+margin-top:28px;
+
+text-align:center;
+
+font-family:'Great Vibes',cursive;
+
+font-size:2.3rem;
+
+color:#7b4323;
+
+}
+
+.page-number{
+
+margin-top:40px;
+
+text-align:center;
+
+font-family:'Cinzel',serif;
+
+font-size:.95rem;
+
+letter-spacing:5px;
+
+color:#9a7742;
+
+}
+
+</style>
+
+<div class="seal-container">
+
+<a
+class="wax-seal"
+target="_blank"
+href="https://j8753741-eng.github.io/Mi-rcoles-15-de-julio-del-2026---poema/">
+
+📜<br>
+
+ABRIR EL<br>
+
+POEMA DE<br>
+
+ESTA NOCHE
+
+</a>
+
+</div>
+
+<div class="page-turn">
+
+<p class="page-turn-text">
+
+<strong>
+
+Los viejos libros dicen que existen capítulos que parecen escritos con lágrimas, pero terminan convirtiéndose en los más valiosos de toda la historia. Esta noche el destino nos recordó que las tormentas también pueden enseñarle al amor cuánto vale aquello que está dispuesto a proteger. Cuando vuelva a caer la siguiente noche, este viejo libro abrirá una nueva página para seguir escribiendo la historia de dos corazones que, incluso después de los días difíciles, continúan eligiéndose con la misma fuerza del primer "te amo".
+
+</strong>
+
+</p>
+
+<a href="https://j8753741-eng.github.io/Jueves-16-de-julio-del-2026---carta-cap-XII-/" class="page-corner">
+
+<span>✦ Pasar la página ✦</span>
+
+</a>
+
+</div>
+
+<div class="ribbon"></div>
+
+<div class="end-message">
+
+<strong>
+
+El capítulo termina aquí. La tinta descansará hasta que una nueva noche vuelva a pedirle al corazón que escriba. Pero mientras este viejo libro permanezca abierto, jamás existirá una última página para nosotros, porque cada amanecer traerá una nueva oportunidad para amarte un poco más que el día anterior, y cada anochecer volverá a recordarme que el destino más hermoso que he encontrado siempre ha sido regresar a ti.
+
+</strong>
+
+</div>
+
 <div class="page-number">
 
 ❦ &nbsp; XI &nbsp; ❦
@@ -213,50 +693,7 @@ Solo un poco más... y una nueva página será revelada.
 
 </div>
 
-<script>
-
-const fechaObjetivo = new Date("2026-07-15T21:30:00");
-
-function actualizarContador(){
-
-    const ahora = new Date();
-    const diferencia = fechaObjetivo.getTime() - ahora.getTime();
-
-    if (diferencia <= 0) {
-
-        document.getElementById("countdown").innerHTML = "✦ Ya disponible ✦";
-        return;
-
-    }
-
-    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-
-    const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-
-    const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
-
-    let texto = "";
-
-    if (dias > 0) {
-        texto += String(dias).padStart(2, "0") + "d ";
-    }
-
-    texto +=
-        String(horas).padStart(2, "0") + ":" +
-        String(minutos).padStart(2, "0") + ":" +
-        String(segundos).padStart(2, "0");
-
-    document.getElementById("countdown").textContent = texto;
-
-}
-
-actualizarContador();
-
-setInterval(actualizarContador, 1000);
-
-</script>
+</div>
 
 </body>
 
